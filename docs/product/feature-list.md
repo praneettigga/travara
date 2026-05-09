@@ -5,7 +5,6 @@
   - Destination
   - Dates
   - Number of travelers
-  - Budget range
   - Trip mode
   - Preferences/interests
   - Pace
