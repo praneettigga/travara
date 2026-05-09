@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terra India - Intelligently Planned</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#859988",
+                        "on-surface-variant": "#c2c8bf",
+                        "outline-variant": "#424841",
+                        "surface-variant": "#333533",
+                        "tertiary": "#b7ccb9",
+                        "surface-container": "#1e201e",
+                        "outline": "#8c938a",
+                        "on-error": "#690005",
+                        "on-tertiary": "#233427",
+                        "primary-fixed": "#c5edc5",
+                        "secondary-fixed": "#ffdcbd",
+                        "on-tertiary-fixed-variant": "#394b3d",
+                        "surface-container-high": "#292a28",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#0e1f13",
+                        "tertiary-fixed": "#d3e8d5",
+                        "surface-container-low": "#1a1c1a",
+                        "secondary-container": "#65411a",
+                        "background": "#121412",
+                        "on-tertiary-container": "#1f3124",
+                        "surface-container-highest": "#333533",
+                        "on-surface": "#e2e3df",
+                        "tertiary-fixed-dim": "#b7ccb9",
+                        "on-secondary-container": "#e1af7e",
+                        "surface-bright": "#383a37",
+                        "secondary-fixed-dim": "#f0bd8b",
+                        "surface-dim": "#121412",
+                        "inverse-on-surface": "#2f312e",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed-variant": "#623f18",
+                        "surface-tint": "#a9d0aa",
+                        "surface-container-lowest": "#0d0f0d",
+                        "on-secondary-fixed": "#2c1600",
+                        "inverse-primary": "#446647",
+                        "on-primary-container": "#113319",
+                        "primary": "#a9d0aa",
+                        "on-background": "#e2e3df",
+                        "on-primary-fixed-variant": "#2c4e31",
+                        "inverse-surface": "#e2e3df",
+                        "primary-container": "#789d7a",
+                        "on-primary": "#15371c",
+                        "surface": "#121412",
+                        "on-secondary": "#482904",
+                        "primary-fixed-dim": "#a9d0aa",
+                        "secondary": "#f0bd8b",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#002109"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Nunito Sans"],
+                        "headline-lg-mobile": ["Nunito Sans"],
+                        "body-md": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"],
+                        "display-lg": ["Nunito Sans"],
+                        "headline-lg": ["Nunito Sans"],
+                        "label-md": ["Nunito Sans"],
+                        "label-sm": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden relative min-h-screen">
+<!-- TopNavBar (Mobile Only) -->
+<nav class="md:hidden flex justify-between items-center w-full px-margin-mobile py-4 bg-transparent docked full-width top-0 z-40">
+<div class="font-display-lg text-display-lg font-bold text-on-surface dark:text-on-surface-variant text-xl">Terra India</div>
+<div class="flex gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md">Sign In</button>
+<button class="text-primary dark:text-primary-fixed-dim font-bold font-label-md text-label-md">Plan My Trip</button>
+</div>
+</nav>
+<!-- SideNavBar (Desktop Only) -->
+<nav class="hidden md:flex flex-col items-center py-6 gap-6 bg-transparent fixed left-6 top-1/2 -translate-y-1/2 h-fit w-16 z-50">
+<!-- Active Tab: Home -->
+<a aria-label="Home" class="bg-primary text-on-primary rounded-full w-12 h-12 flex items-center justify-center scale-110 shadow-lg hover:scale-105 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+</a>
+<a aria-label="Explore" class="text-on-surface-variant hover:text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all hover:bg-surface-container-highest/50 hover:scale-105 active:scale-95 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+</a>
+<a aria-label="Itineraries" class="text-on-surface-variant hover:text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all hover:bg-surface-container-highest/50 hover:scale-105 active:scale-95 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+</a>
+<a aria-label="Bookings" class="text-on-surface-variant hover:text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all hover:bg-surface-container-highest/50 hover:scale-105 active:scale-95 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="luggage">luggage</span>
+</a>
+<a aria-label="Saved" class="text-on-surface-variant hover:text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all hover:bg-surface-container-highest/50 hover:scale-105 active:scale-95 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+</a>
+<a aria-label="Profile" class="text-on-surface-variant hover:text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all hover:bg-surface-container-highest/50 hover:scale-105 active:scale-95 duration-300 mt-auto pt-4 border-t border-outline-variant/10" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</nav>
+<!-- Main Content Canvas -->
+<main class="w-full flex flex-col pl-0"> <!-- Offset for sidebar -->
+<!-- Hero Section -->
+<section class="relative w-full h-screen flex flex-col items-center justify-start pt-32 md:pt-40 bg-background overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ujbZk2Hga94uZBHbHYxkoaObVkC4uIIymUj-zTHhZ9hO0r2BUfmw-de9dYrLEp1pvl73o24PaY8RhKlC_8JkvWwPzus-G5OfKLDhX3fhOe2F1WkhngIC2Lloy0TKNWtEOF_wJM9Fs6ytp1k0uCrudSQsZ_hoWP1828CYy_W1G9HHehrVTW5nfgA-DE69udYYJkrU0sruqE3-konrpOm3B2crab40eac7SjzwsUzbboxKNM4Ok-u2IYL0Tlv-R_o3kqADqsGZifbEWs'); background-size: cover; background-position: center;">
+<!-- Gradient Overlay for Text Readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-background/90 via-background/40 to-background z-0 pointer-events-none"></div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center gap-6">
+<h1 class="font-display-lg text-display-lg text-on-surface drop-shadow-md">
+                    Your India,<br/>
+<span class="text-primary-fixed-dim">Intelligently Planned.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl drop-shadow-sm">
+                    Rooted in tradition, powered by intelligence. Discover a sanctuary-like planning experience for your next journey through India.
+                </p>
+<button class="mt-4 bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-primary-fixed transition-colors shadow-[0_0_20px_rgba(169,208,170,0.2)]">
+                    Start Planning
+                </button>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-on-surface-variant opacity-70 animate-bounce">
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Scroll</span>
+<span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+</div>
+</section>
+<!-- Features Section (Bento Grid) -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 flex flex-col gap-12 relative z-10 bg-background">
+<div class="flex flex-col gap-4 text-center md:text-left mb-8">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Effortless Exploration</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Tools designed to quietly support your journey, fading into the background so you can focus on the experience.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- AI Itineraries (Large Card) -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-outline-variant/40 transition-colors relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="relative z-10 flex flex-col gap-4 max-w-md">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">AI Itineraries</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Generative schedules that adapt to your pace, preferences, and real-time conditions. No more rigid templates.</p>
+</div>
+</div>
+<!-- Budget Control (Small Card) -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-outline-variant/40 transition-colors">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-secondary mb-4">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Budget Control</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Transparent tracking with smart alerts, keeping you comfortably within limits.</p>
+</div>
+</div>
+<!-- Hidden Gems (Small Card) -->
+<div class="md:col-span-5 bg-surface-container-low rounded-xl p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-outline-variant/40 transition-colors">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-tertiary mb-4">
+<span class="material-symbols-outlined" data-icon="travel_explore">travel_explore</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Hidden Gems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Discover off-the-beaten-path locations curated by local experts and filtered by AI.</p>
+</div>
+</div>
+<!-- Visual Planning Canvas (Medium Card) -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-outline-variant/40 transition-colors relative overflow-hidden">
+<div class="absolute -left-20 -bottom-20 w-64 h-64 bg-tertiary/5 rounded-full blur-3xl group-hover:bg-tertiary/10 transition-colors"></div>
+<div class="relative z-10 flex flex-col gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary-fixed-dim mb-4">
+<span class="material-symbols-outlined" data-icon="dashboard_customize">dashboard_customize</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Visual Planning Canvas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A spatial interface to map out your journey. Drag, drop, and visualize your entire route in a quiet, distraction-free environment.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-margin-desktop py-12 gap-8 bg-surface-dim border-t border-outline-variant/20 pl-0 relative z-20">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface">Terra India</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Travel Guides</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Support</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant opacity-80 text-center md:text-right">
+            © 2024 Terra India. Rooted in tradition, powered by intelligence.
+        </div>
+</footer>
+</body></html>
