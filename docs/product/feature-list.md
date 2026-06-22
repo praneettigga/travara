@@ -170,3 +170,25 @@ The main Itinerary builder UI will have two main parts: The editable canvas and 
     - PDF
     - PNG
     - shareable link
+
+## Social / Gamified Features:
+
+  ### Automatic photo reminders
+  ### Sharable Journey card
+    - creates a journey card at the end of your trip
+    - Route map of the trip
+    - Cities visited
+    - Total distance traveled
+    - Duration
+    - Photos from each stop
+    - Beautiful visual design
+    - with a nice route line connecting everything
+    - exportable to social media (aesthet) beautiful image optimized for Instagram Stories/ whatsapp etc...
+    
+  ### Strava like map feature that summarises your whole trip.
+  ### Trip Story
+  ### Clone trip - people can clone your trip itinerary
+  ### Passport / Achievement System
+    - Digital dummy passport
+    - Explorer badges
+    - Travel stats
