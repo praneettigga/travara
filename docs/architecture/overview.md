@@ -1,5 +1,6 @@
 # Architecture Overview
 
+The end goal is to make web app, ios and android apps
 ## Stack
 
 Frontend
@@ -11,8 +12,8 @@ Frontend
 - Framer Motion
 
 Backend
-- Django
-- Django REST Framework
+- Spring-boot
+- Spring-boot REST Framework
 
 Database
 - PostgreSQL

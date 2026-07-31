@@ -2,8 +2,8 @@
 
 ## Stack
 
-- Django
-- Django REST Framework
+- Spring-boot
+- Spring-boot REST Framework
 - PostgreSQL
 
 ## Responsibilities
@@ -24,14 +24,3 @@ Potential future additions:
 - WebSockets for collaboration
 - async task queues
 - AI microservices
-
-## Suggested App Structure
-
-backend/
-├── users/
-├── trips/
-├── itinerary/
-├── recommendations/
-├── ai/
-├── budgets/
-└── collaboration/
