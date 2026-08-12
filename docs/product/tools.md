@@ -1,7 +1,7 @@
 #List of Tools that i may need
 
 ##APIs
-- places
+- places - FSQ OS Places
 - festivals
 - weather
 - activities
