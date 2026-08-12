@@ -1,9 +1,11 @@
 # Architecture Overview
 
-The end goal is to make web app, ios and android apps
+The long-term goal is to support web, iOS, and Android applications.
+
 ## Stack
 
-Frontend
+### Frontend
+
 - React
 - Vite
 - TailwindCSS
@@ -11,12 +13,22 @@ Frontend
 - React Query
 - Framer Motion
 
-Backend
-- Spring-boot
-- Spring-boot REST Framework
+### Backend
 
-Database
+- Node.js
+- TypeScript
+- NestJS
+- NestJS REST APIs
+
+### Database
+
 - PostgreSQL
+
+## Development and Deployment
+
+For now, the frontend, backend, and PostgreSQL database run locally. Hosting,
+cloud infrastructure, and production deployment decisions are intentionally
+deferred until the application is ready to be deployed.
 
 ## Core Systems
 
@@ -30,6 +42,7 @@ Database
 ## Architecture Philosophy
 
 The platform follows a modular architecture:
+
 - frontend handles interaction + visual planning
 - backend handles orchestration + AI logic
 - database stores itineraries, users, and trip state
